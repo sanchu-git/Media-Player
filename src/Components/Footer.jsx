@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -16,9 +17,9 @@ function Footer() {
         </div>
         <div className="links d-flex flex-column">
           <h3>Links</h3>
-          <a style={{ color: 'white' }} className='text-decoration-none' href="">Landing Page</a>
-          <a style={{ color: 'white' }} className='text-decoration-none' href="">Home</a>
-          <a style={{ color: 'white' }} className='text-decoration-none' href="">Watch History</a>
+          <Link to={'/'} style={{ color: 'white',  textDecoration:'none' }}>Landing Page</Link>
+          <Link to={'/home'} style={{ color: 'white', textDecoration:'none' }}>Home</Link>
+          <Link to={'/history'} style={{ color: 'white', textDecoration:'none' }}>Watch History</Link>
         </div>
 
         <div className="guides d-flex flex-column">

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 function LandingPage() {
   return (
     <div className='container mt-5'>
@@ -8,7 +9,7 @@ function LandingPage() {
         <h3>Welcome to <span className='text-warning'>Media Player</span></h3>
         <p style={{textAlign:'justify'}}>Media Player App. will allow us to add and remove their uploaded videos ,
         also helps to arrange them in different categories by providing  drag and drop functionalities</p>
-        <button className='btn btn-info mt-5 fw-bolder'>Get Started</button>
+        <Link to={'/home'} className='btn btn-info mt-5 fw-bolder'>Get Started</Link>
         </div>
         <div className='col'></div>
         <div className='col-lg-6'>
@@ -61,7 +62,7 @@ function LandingPage() {
       </div>
       <div className="col-lg-1"></div>
       <div className="col-lg-6">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/IqwIOlhfCak?si=llGdSfGmUPpAR2BM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="688" height="387" src="https://www.youtube.com/embed/IqwIOlhfCak" title="LEO - Badass Lyric | Thalapathy Vijay | Lokesh Kanagaraj | Anirudh Ravichander" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
     </div>
