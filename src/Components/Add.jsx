@@ -24,7 +24,7 @@ function Add() {
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>Upload New Video</Modal.Title>
+          <Modal.Title>Video Uploading form</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         <FloatingLabel
@@ -32,11 +32,30 @@ function Add() {
         label="Uploading Video ID"
         className="mb-3"
       >
-        <Form.Control type="email" placeholder="name@example.com" />
+        <Form.Control type="email" placeholder="Uploading Video ID" />
       </FloatingLabel>
-      <FloatingLabel controlId="floatingPassword" label="Password">
-        <Form.Control type="password" placeholder="Password" />
+      <FloatingLabel
+        controlId="floatingInput"
+        label="Uploading Video Caption"
+        className="mb-3"
+      >
+        <Form.Control type="email" placeholder="Uploading Video Caption" />
       </FloatingLabel>
+      <FloatingLabel
+        controlId="floatingInput"
+        label="Uploading Video Image URL"
+        className="mb-3"
+      >
+        <Form.Control type="email" placeholder="Uploading Video Image URL" />
+      </FloatingLabel>
+      <FloatingLabel
+        controlId="floatingInput"
+        label="Uploading Video Youtube Link"
+        className="mb-3"
+      >
+        <Form.Control type="email" placeholder="Uploading Video Youtube Link" />
+      </FloatingLabel>
+
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
